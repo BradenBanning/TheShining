@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using ObjectPooling;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 
@@ -9,6 +10,8 @@ public class CarLateralMovement : MonoBehaviour
     [SerializeField] private SOGameObjectRef _RoadChunksRef;
     [SerializeField] private Vector3 _MoveAmount;
     [SerializeField] private float _TimerLimit;
+    
+    
 
     private float _CurrentPosition;
 
@@ -21,7 +24,9 @@ public class CarLateralMovement : MonoBehaviour
         if (_Timer >= _TimerLimit)
         {
             _CurrentPosition += _MoveAmount.x;
-            _RoadChunksRef.Ref.Value.transform.position = new Vector3(-_CurrentPosition, 0f, 0f);
+            var yPos = _RoadChunksRef.Ref.Value.transform.position.y;
+            var zPos = _RoadChunksRef.Ref.Value.transform.position.z;
+            _RoadChunksRef.Ref.Value.transform.position = new Vector3(-_CurrentPosition, yPos, zPos);
         }
     }
 

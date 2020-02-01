@@ -606,6 +606,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5439488537295572337}
   - component: {fileID: 5462597131892914685}
+  - component: {fileID: -2813333674714736372}
+  - component: {fileID: 6117645940164248243}
+  - component: {fileID: -490938629182338399}
   m_Layer: 0
   m_Name: RoadChunck
   m_TagString: Untagged
@@ -646,8 +649,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2eebdfcb41a0058479104f10bc02cfe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _TimerIncrement: 0.02
+  _RoadChunkRef: {fileID: 11400000, guid: f32df6d990439874ea824c29e7126e8a, type: 2}
   _TimerGoal: 0.02
-  _TimerInitialGoal: 0.02
   _LerpSpeed: 0.3
   _PositionIncrement: -57
+--- !u!114 &-2813333674714736372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7649526971004468602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c92b8c47a40cbf4fac8ed152b727cda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Lifespan: -1
+--- !u!114 &6117645940164248243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7649526971004468602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa4d91a48ca66f34685ec984ae58b4bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _EndPoint: -57
+  _StartPoint: 570
+  _PrefabRef: {fileID: -2813333674714736372}
+--- !u!114 &-490938629182338399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7649526971004468602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5564f6212d5f13478775d30fcedd116, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _RoadChunksRef: {fileID: 11400000, guid: f32df6d990439874ea824c29e7126e8a, type: 2}

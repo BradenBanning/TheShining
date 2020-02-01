@@ -1,18 +1,18 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ImageSetter : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private SOImageRef _ImageSO;
+    private Image _Image;
 
-    // Update is called once per frame
-    void Update()
+
+    private void Awake()
     {
-        
+        _Image = GetComponent<Image>();
+        _ImageSO.CreateRunTimeObject(_Image);
     }
 }
