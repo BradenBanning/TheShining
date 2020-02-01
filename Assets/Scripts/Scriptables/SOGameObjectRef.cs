@@ -1,11 +1,13 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using ObjectPooling;
+using UnityEngine;
 
 [CreateAssetMenu(menuName = "Scriptables/GORef")]
 public class SOGameObjectRef : ScriptableObject
 {
     public SOGameObjectRef Ref { get; private set; }
     public GameObject Value { get; private set; }
-    
+
     public void CreateRunTimeObject(GameObject val)
     {
         Ref = ScriptableObject.CreateInstance<SOGameObjectRef>();
