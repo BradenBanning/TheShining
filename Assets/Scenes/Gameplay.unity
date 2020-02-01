@@ -361,6 +361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5c83f9a53f47714d80b3461065e8f42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _StearingInputsRef: {fileID: 11400000, guid: f14bb9046caf15143881e9fb0f1ceb85, type: 2}
   _DashBoardRef: {fileID: 11400000, guid: 123c95c39a76c964c98a0df598f77f0d, type: 2}
   _RoadChunksRef: {fileID: 11400000, guid: f32df6d990439874ea824c29e7126e8a, type: 2}
   _RotationAmount: {x: 0, y: 0.01, z: 0}
@@ -1206,4 +1207,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca25d350dbb94ea4b873d321262c1625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _StearingInputsRef: {fileID: 11400000, guid: f14bb9046caf15143881e9fb0f1ceb85, type: 2}
   _Cam: {fileID: 1536640297}
+  _InputGoal: 3
