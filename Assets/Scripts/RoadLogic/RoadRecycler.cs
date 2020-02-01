@@ -25,7 +25,7 @@ public class RoadRecycler : MonoBehaviour
         {
             _PoolableObjectRef.StartDisbler();
             var nextRoad = PoolManager.GetNext(_PrefabRef);
-            nextRoad.transform.position = new Vector3(0f,0f,_StartPoint);
+            nextRoad.transform.localPosition = new Vector3(0f,0f,_StartPoint);
             nextRoad.gameObject.SetActive(true);
         }
         
