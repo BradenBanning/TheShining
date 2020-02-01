@@ -1,0 +1,823 @@
+fileFormatVersion: 2
+guid: 8a6cafa16b3196c4d8cd738d41c18c77
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9040563256910125068
+    second: TheSky_1024x512_0
+  - first:
+      213: 319810657394139256
+    second: TheSky_1024x512_1
+  - first:
+      213: -7821960251383069620
+    second: TheSky_1024x512_2
+  - first:
+      213: 1402748827833133663
+    second: TheSky_1024x512_3
+  - first:
+      213: -6345777896493733020
+    second: TheSky_1024x512_4
+  - first:
+      213: -2872556318462506308
+    second: TheSky_1024x512_5
+  - first:
+      213: 8441690244191306226
+    second: TheSky_1024x512_6
+  - first:
+      213: -6927161207412899327
+    second: TheSky_1024x512_7
+  - first:
+      213: 6285540583653347529
+    second: TheSky_1024x512_8
+  - first:
+      213: 5454793083655565978
+    second: TheSky_1024x512_9
+  - first:
+      213: 1979932461763449191
+    second: TheSky_1024x512_10
+  - first:
+      213: 2648195442784593491
+    second: TheSky_1024x512_11
+  - first:
+      213: -6859202280319231733
+    second: TheSky_1024x512_12
+  - first:
+      213: 8188038470418435601
+    second: TheSky_1024x512_13
+  - first:
+      213: 6940590620043798889
+    second: TheSky_1024x512_14
+  - first:
+      213: -5467998230721668207
+    second: TheSky_1024x512_15
+  - first:
+      213: 7671448658322555458
+    second: TheSky_1024x512_16
+  - first:
+      213: 2831602369399151132
+    second: TheSky_1024x512_17
+  - first:
+      213: -4040867017726104868
+    second: TheSky_1024x512_18
+  - first:
+      213: -113683369442746911
+    second: TheSky_1024x512_19
+  - first:
+      213: 7983504165144616770
+    second: TheSky_1024x512_20
+  - first:
+      213: 6457718241553466194
+    second: TheSky_1024x512_21
+  - first:
+      213: -5158356141523870861
+    second: TheSky_1024x512_22
+  - first:
+      213: 1727160712794179227
+    second: TheSky_1024x512_23
+  - first:
+      213: -556870417480959397
+    second: TheSky_1024x512_24
+  - first:
+      213: 2411423701306804106
+    second: TheSky_1024x512_25
+  - first:
+      213: -181205482036684304
+    second: TheSky_1024x512_26
+  - first:
+      213: -12192764375207472
+    second: TheSky_1024x512_27
+  - first:
+      213: 9063575431532519403
+    second: TheSky_1024x512_28
+  - first:
+      213: -9156887044064335599
+    second: TheSky_1024x512_29
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TheSky_1024x512_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2560
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f76c66ed97798280800000000000000
+      internalID: -9040563256910125068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheSky_1024x512_1
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2560
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 870ac553912307400800000000000000
+      internalID: 319810657394139256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheSky_1024x512_2
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2560
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4446190890d27390800000000000000
+      internalID: -7821960251383069620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheSky_1024x512_3
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 2560
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5ae61870a0977310800000000000000
+      internalID: 1402748827833133663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheSky_1024x512_4
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 2560
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46b27ffdf944fe7a0800000000000000
+      internalID: -6345777896493733020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheSky_1024x512_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2048
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cba0db07f31a228d0800000000000000
+      internalID: -2872556318462506308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheSky_1024x512_6
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2048
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f147e41d88e62570800000000000000
+      internalID: 8441690244191306226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheSky_1024x512_7
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2048
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 102c9426597cddf90800000000000000
+      internalID: -6927161207412899327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheSky_1024x512_8
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 2048
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c095fdcbd9ba3750800000000000000
+      internalID: 6285540583653347529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheSky_1024x512_9
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 2048
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a923c8aa86153bb40800000000000000
+      internalID: 5454793083655565978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheSky_1024x512_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 761dca675122a7b10800000000000000
+      internalID: 1979932461763449191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheSky_1024x512_11
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1536
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 356ebf679b740c420800000000000000
+      internalID: 2648195442784593491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheSky_1024x512_12
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1536
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b09d50f1ed73fc0a0800000000000000
+      internalID: -6859202280319231733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheSky_1024x512_13
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1536
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11e06845b91c1a170800000000000000
+      internalID: 8188038470418435601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheSky_1024x512_14
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 1536
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9696e17656ee15060800000000000000
+      internalID: 6940590620043798889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheSky_1024x512_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1031
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19bde517494cd14b0800000000000000
+      internalID: -5467998230721668207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheSky_1024x512_16
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1024
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24286ffd8e5767a60800000000000000
+      internalID: 7671448658322555458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheSky_1024x512_17
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1024
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1ad03d3a5fdb4720800000000000000
+      internalID: 2831602369399151132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheSky_1024x512_18
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1024
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdae7d75bd4fbe7c0800000000000000
+      internalID: -4040867017726104868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheSky_1024x512_19
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 1024
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1edde7be39d1c6ef0800000000000000
+      internalID: -113683369442746911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheSky_1024x512_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24fdb426dba1bce60800000000000000
+      internalID: 7983504165144616770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheSky_1024x512_21
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 512
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 253ca57b68c6e9950800000000000000
+      internalID: 6457718241553466194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheSky_1024x512_22
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 512
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37bd38f5b66d968b0800000000000000
+      internalID: -5158356141523870861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheSky_1024x512_23
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 512
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b968b14748b18f710800000000000000
+      internalID: 1727160712794179227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheSky_1024x512_24
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 512
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5abf144e499548f0800000000000000
+      internalID: -556870417480959397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheSky_1024x512_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a87895f7419177120800000000000000
+      internalID: 2411423701306804106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheSky_1024x512_26
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f999dbf29a3c7df0800000000000000
+      internalID: -181205482036684304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheSky_1024x512_27
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d1f592debea4dff0800000000000000
+      internalID: -12192764375207472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheSky_1024x512_28
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 0
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bef147785d948cd70800000000000000
+      internalID: 9063575431532519403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheSky_1024x512_29
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 0
+        width: 1024
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1192b2aafb33ce080800000000000000
+      internalID: -9156887044064335599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
