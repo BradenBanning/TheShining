@@ -54,7 +54,7 @@ public class KeyReaderInput : MonoBehaviour
                 }
                 else if ( vKey.ToString() == KeyCode.Semicolon.ToString())
                 {
-                    char inputChar = '-';
+                    char inputChar = ';';
                     _TextBoxRef.TestInput(inputChar);
                     
                 }
