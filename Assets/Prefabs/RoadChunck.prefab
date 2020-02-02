@@ -651,6 +651,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _MoveSpeed: 4
   _MoveSpeedMultiplier: 0.05
+  _TimerLimit: 0.02
 --- !u!114 &-2813333674714736372
 MonoBehaviour:
   m_ObjectHideFlags: 0
