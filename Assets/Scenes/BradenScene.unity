@@ -856,6 +856,8 @@ MonoBehaviour:
   _RoadChunksRef: {fileID: 11400000, guid: f32df6d990439874ea824c29e7126e8a, type: 2}
   _StearingInputsRef: {fileID: 11400000, guid: f14bb9046caf15143881e9fb0f1ceb85, type: 2}
   _TimerRef: {fileID: 11400000, guid: 373a758170f3c3e4f811545fc9605c71, type: 2}
+  _SwitchStateRef: {fileID: 11400000, guid: c25586a47e7fe04489816bd828716726, type: 2}
+  _SpeedStateReducer: 0.25
   _MoveAmount: {x: 0.01, y: 0, z: 0}
 --- !u!114 &315792230
 MonoBehaviour:
