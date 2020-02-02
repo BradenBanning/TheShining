@@ -3633,6 +3633,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ff2ad68e32700c44a97e9e239175794, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _GameTimerRef: {fileID: 11400000, guid: b7a01ff9eef4d7844a7680beb1d73134, type: 2}
+  PhaseInteratorRef: {fileID: 11400000, guid: d2c2094db3f9f4a49bf29435f2220849, type: 2}
 --- !u!114 &2536377165429799764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3645,6 +3647,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09293d374b471364d838ebad3c41c671, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _GameTimerRef: {fileID: 11400000, guid: b7a01ff9eef4d7844a7680beb1d73134, type: 2}
+  PhaseInteratorRef: {fileID: 11400000, guid: d2c2094db3f9f4a49bf29435f2220849, type: 2}
 --- !u!1 &7685191056254483820
 GameObject:
   m_ObjectHideFlags: 0

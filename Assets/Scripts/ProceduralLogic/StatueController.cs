@@ -7,7 +7,7 @@ public class StatueController : MonoBehaviour
 {
     [SerializeField] private SOTimer _GameTimerRef;
 
-    private int PhaseInterator = 1;
+    [SerializeField] private SOFloat PhaseInteratorRef;
 
     private IsStatue[] _StatueArray;
 
@@ -24,7 +24,7 @@ public class StatueController : MonoBehaviour
     {
         _GameTimerRef.IsTimerRunning += PhaseHasChanged;
 
-        if (PhaseInterator % 2 != 0)
+        if (PhaseIsNight() == true)
         {
             if (Random.Range(0, 49) <= 0)
             {
@@ -35,16 +35,20 @@ public class StatueController : MonoBehaviour
         }
     }
 
-    private void PhaseHasChanged(bool obj)
+    private void OnDisable()
     {
-        PhaseInterator++;
+        _GameTimerRef.IsTimerRunning -= PhaseHasChanged;
         DisableAllStatues();
     }
 
-    private void OnDisable()
+    private void PhaseHasChanged(bool val)
     {
-        DisableAllStatues();
+        if (PhaseIsNight() == true && val == false)
+        {
+            DisableAllStatues();
+        }
     }
+
 
     private void DisableAllStatues()
     {
@@ -55,5 +59,10 @@ public class StatueController : MonoBehaviour
                 _StatueArray[i].gameObject.SetActive(false);
             }
         }
+    }
+
+    private bool PhaseIsNight()
+    {
+        return Mathf.RoundToInt(PhaseInteratorRef.Value) % 2 != 0;
     }
 }

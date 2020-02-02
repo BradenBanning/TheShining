@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Timers;
 using UnityEngine;
 
 public class GameTimer : MonoBehaviour
@@ -24,11 +25,20 @@ public class GameTimer : MonoBehaviour
         _PhaseIteratorRef.SetValue(1f);
     }
 
+    private void Update()
+    {
+        _GameTimerRef.ModifyValue(Time.deltaTime);
+        if (_GameTimerRef.CheckIfTimerLimitReached())
+        {
+            _GameTimerRef.StopTimer();
+        }
+    }
+
     private void OnEnable()
     {
         _GameTimerRef.IsTimerRunning += TimerReachedLimit;
     }
-    
+
     private void OnDisable()
     {
         _GameTimerRef.IsTimerRunning -= TimerReachedLimit;
@@ -36,15 +46,18 @@ public class GameTimer : MonoBehaviour
 
     private void TimerReachedLimit(bool val)
     {
+        Debug.Log("Limit Reached");
+        if (val == false)
+        {
+            _PhaseIteratorRef.ModifyValue(1f);
+        }
+
         _GameTimerRef.TryStartTimer();
         CurrentPhase++;
-        _PhaseIteratorRef.ModifyValue(1f);
 
         if (CurrentPhase > _NumberOfPhasesPerGame)
         {
-            _GameWinEventRef.GameWinHappened.Invoke();            
+            _GameWinEventRef.GameWinHappened.Invoke();
         }
-        
-
     }
 }
