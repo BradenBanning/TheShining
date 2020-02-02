@@ -10,9 +10,11 @@ public class SwitchStates : MonoBehaviour
     [SerializeField] private float _MoveSpeed = 0.05f;
     [SerializeField] private float _UpperDestination = 500f;
     [SerializeField] private float _LowerDestination = 1f;
+    [SerializeField] private float _TimerLimit = 0.01f;
     private bool _InPhoneState = false;
     private int _MoveDirection = -1;
     private bool _IsMoving = false;
+    private float _Timer;
 
     private void OnEnable()
     {
@@ -27,8 +29,12 @@ public class SwitchStates : MonoBehaviour
     private void Update()
     {
         if (_IsMoving == false) return;
-
-        MoveToNextState();
+        // _Timer += Time.deltaTime;
+        // if (_Timer >= _TimerLimit)
+        {
+            _Timer = 0f;
+            MoveToNextState();
+        }
     }
 
     private void MoveToNextState()
