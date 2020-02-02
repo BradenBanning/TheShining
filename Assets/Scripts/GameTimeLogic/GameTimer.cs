@@ -15,6 +15,8 @@ public class GameTimer : MonoBehaviour
     [SerializeField] private float _GamePhaseTimeLimit = 480f;
 
     [SerializeField] private int _NumberOfPhasesPerGame = 60;
+    
+    private bool _TimerRunning = true;
 
     public int CurrentPhase { get; private set; } = 0;
 
@@ -27,9 +29,23 @@ public class GameTimer : MonoBehaviour
 
     private void Update()
     {
+        if(_TimerRunning == false) return;
+
+        if (Input.GetKeyDown(KeyCode.Alpha0))
+        {
+            _GameTimerRef.SetTimeLimit(50000f);
+        }
+        
+        if (Input.GetKeyDown(KeyCode.Alpha9))
+        {
+            _GameTimerRef.SetTimeLimit(5f);
+        }
+        
+        
         _GameTimerRef.ModifyValue(Time.deltaTime);
         if (_GameTimerRef.CheckIfTimerLimitReached())
         {
+            _TimerRunning = false;
             _GameTimerRef.StopTimer();
         }
     }
@@ -46,14 +62,15 @@ public class GameTimer : MonoBehaviour
 
     private void TimerReachedLimit(bool val)
     {
-        Debug.Log("Limit Reached");
         if (val == false)
         {
             _PhaseIteratorRef.ModifyValue(1f);
         }
 
         _GameTimerRef.TryStartTimer();
+        
         CurrentPhase++;
+        _TimerRunning = true;
 
         if (CurrentPhase > _NumberOfPhasesPerGame)
         {
