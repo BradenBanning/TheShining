@@ -20,12 +20,12 @@ public class TextBoxBehaviour : MonoBehaviour
         if (_TextBoxRef.CurrentCharacter > 0)
         {
             string currentTypingText = "";
+            
             for (int i = 0; i < _TextBoxRef.CurrentCharacter ; i++)
             {
                currentTypingText = currentTypingText.Insert(currentTypingText.Length, _TextBoxRef.GetGoalText()[i].ToString());
             }
-            Debug.Log(currentTypingText);
-
+            
             _TypingDisplay.text = currentTypingText;
         }
 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class CatusController : MonoBehaviour
+public class CactusController : MonoBehaviour
 {
     private IsCactus[] _CactusArray;
 
@@ -18,21 +18,28 @@ public class CatusController : MonoBehaviour
 
     private void OnEnable()
     {
-        var range = Random.Range(0, _CactusArray.Length);
-        
-        var count =  Mathf.Clamp(range - 10, 0, 2);
-
-        for (int i = 0; i < count; i++)
+        if (Random.Range(0, 4) <= 0)
         {
-            // Debug.Log(range % _CactusArray.Length);
-            _CactusArray[range % _CactusArray.Length].gameObject.SetActive(true);
-            range += _CactusArray.Length / 2;
+            var range = Random.Range(0, _CactusArray.Length);
+
+            var count = Mathf.Clamp(range - 10, 0, 2);
+
+            for (int i = 0; i < count; i++)
+            {
+                // Debug.Log(range % _CactusArray.Length);
+                _CactusArray[range % _CactusArray.Length].gameObject.SetActive(true);
+                range += _CactusArray.Length / 2;
+            }
         }
-        
-        
+
     }
 
     private void OnDisable()
+    {
+        DisableAllCacti();
+    }
+
+    private void DisableAllCacti()
     {
         for (int i = 0; i < _CactusArray.Length; i++)
         {

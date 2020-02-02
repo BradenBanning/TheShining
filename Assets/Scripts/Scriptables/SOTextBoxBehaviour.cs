@@ -29,8 +29,8 @@ public class SOTextBoxBehaviour : ScriptableObject
         if (input == _GoalText[ChaptersCompleted].ToUpper()[CurrentCharacter])
         {
             CurrentCharacter++;
-            Debug.Log(
-                $"Hit! : Current Character -> {CurrentCharacter} : GoalText Length -> {_GoalText[ChaptersCompleted].Length}");
+            // Debug.Log(
+            //     $"Hit! : Current Character -> {CurrentCharacter} : GoalText Length -> {_GoalText[ChaptersCompleted].Length}");
             if (CurrentCharacter >= _GoalText[ChaptersCompleted].Length)
             {
                 CompletedChapter();
@@ -41,12 +41,11 @@ public class SOTextBoxBehaviour : ScriptableObject
     private void CompletedChapter()
     {
         CurrentCharacter = 0;
-        Debug.Log("Chapter Completed: Congrats");
             ChaptersCompleted++;
 
         if (ChaptersCompleted >= TotalChapters)
         {
-            Debug.Log("Book Finished: Congratulations!");
+            //Code Goes Here for Win State if Determined by Chapter Completion, etc.
         }
     }
 

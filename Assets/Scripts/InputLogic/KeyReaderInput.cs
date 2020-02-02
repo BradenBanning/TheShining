@@ -18,7 +18,6 @@ public class KeyReaderInput : MonoBehaviour
         {
             if (Input.GetKeyDown(vKey))
             {
-                Debug.Log(vKey.ToString());
                 if (vKey.ToString() == KeyCode.Space.ToString())
                 {
                     char inputChar = ' ';
@@ -38,7 +37,6 @@ public class KeyReaderInput : MonoBehaviour
                 else
                 {
                     char inputChar = vKey.ToString().ToCharArray()[0];
-                    // Debug.Log(inputChar);
                     _TextBoxRef.TestInput(inputChar);
                 }
             }
