@@ -50,4 +50,9 @@ public class SOTextBoxBehaviour : ScriptableObject
         
     }
 
+    public string GetGoalText()
+    {
+        return _GoalText[ChaptersCompleted];
+    }
+
 }

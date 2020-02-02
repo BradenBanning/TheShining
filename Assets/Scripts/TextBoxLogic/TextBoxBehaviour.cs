@@ -1,37 +1,21 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 
 public class TextBoxBehaviour : MonoBehaviour
 {
-    public Texture2D textureToDisplay;
+    [SerializeField] private SOTextBoxBehaviour _TextBoxRef;
 
-    void OnGUI()
+    [SerializeField] private TextMeshProUGUI _CurrentChapterDisplay;
+    
+    [SerializeField] private TextMeshProUGUI _TypingDisplay;
+
+
+    private void Update()
     {
-        GUI.Label(new Rect(550, 600, 500, 500), "Hello World!");
-        GUI.Label(new Rect(100, 400, textureToDisplay.width, textureToDisplay.height), textureToDisplay);
+        _CurrentChapterDisplay.text = _TextBoxRef.GetGoalText();
     }
 }
-
-
-
-
-//     private string _textName = "text";
-//
-//     public string TextName
-//     {
-//         get { return _textName; }
-//         set
-//         {
-//             _textName = value;
-//             // RaisePropertyChanged(nameof(TextName));
-//         }
-//     }
-
-
-// <StackPanel>
-// <TextBlock Text = "{Binding TextName}" FontSize = "30"></TextBlock>
-// <TextBox Text = "{Binding TextName, 
-// UpdateSourceTrigger = PropertyChanged}">
-// </TextBox>
-// </StackPanel>
