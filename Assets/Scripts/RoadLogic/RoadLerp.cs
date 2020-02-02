@@ -18,6 +18,7 @@ public class RoadLerp : MonoBehaviour
         _Timer += Time.deltaTime;
         if (_Timer >= _TimerLimit)
         {
+            _Timer = 0;
             var newPos = transform.position.z - (_MoveSpeed * _MoveSpeedMultiplier);
             transform.localPosition = new Vector3(0f, 0f, newPos);
             

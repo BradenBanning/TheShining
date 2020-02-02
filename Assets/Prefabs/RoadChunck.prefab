@@ -611,6 +611,7 @@ GameObject:
   - component: {fileID: 1897880191814840077}
   - component: {fileID: 1897880191814840074}
   - component: {fileID: 7048876763314704332}
+  - component: {fileID: 7183181261967410611}
   m_Layer: 0
   m_Name: New Sprite (4)
   m_TagString: Untagged
@@ -695,6 +696,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cca2dc92a05dcd49ad1e5e26094ddc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7183181261967410611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897880191814840075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e768249f0da7288449ba6eec74d8b28e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PhaseInteratorRef: {fileID: 11400000, guid: d2c2094db3f9f4a49bf29435f2220849, type: 2}
+  _GameTimerRef: {fileID: 11400000, guid: b7a01ff9eef4d7844a7680beb1d73134, type: 2}
+  _Sprites:
+  - {fileID: -9053078709900273536, guid: bcbb98e2d5bb68240bf23647a8b4ba84, type: 3}
+  - {fileID: -2304745105975620534, guid: 6671e2332428f984587b8e16b29f43c4, type: 3}
 --- !u!1 &1897880192439167713
 GameObject:
   m_ObjectHideFlags: 0
@@ -706,6 +724,7 @@ GameObject:
   - component: {fileID: 1897880192439167715}
   - component: {fileID: 1897880192439167712}
   - component: {fileID: 1672636779611699473}
+  - component: {fileID: 7953953593435482925}
   m_Layer: 0
   m_Name: New Sprite
   m_TagString: Untagged
@@ -790,6 +809,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cca2dc92a05dcd49ad1e5e26094ddc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7953953593435482925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897880192439167713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e768249f0da7288449ba6eec74d8b28e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PhaseInteratorRef: {fileID: 11400000, guid: d2c2094db3f9f4a49bf29435f2220849, type: 2}
+  _GameTimerRef: {fileID: 11400000, guid: b7a01ff9eef4d7844a7680beb1d73134, type: 2}
+  _Sprites:
+  - {fileID: -9053078709900273536, guid: bcbb98e2d5bb68240bf23647a8b4ba84, type: 3}
+  - {fileID: -2304745105975620534, guid: 6671e2332428f984587b8e16b29f43c4, type: 3}
 --- !u!1 &1897880192566209715
 GameObject:
   m_ObjectHideFlags: 0
@@ -801,6 +837,7 @@ GameObject:
   - component: {fileID: 1897880192566209717}
   - component: {fileID: 1897880192566209714}
   - component: {fileID: 4924641362116303705}
+  - component: {fileID: 5830337873273367446}
   m_Layer: 0
   m_Name: New Sprite (3)
   m_TagString: Untagged
@@ -885,6 +922,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cca2dc92a05dcd49ad1e5e26094ddc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5830337873273367446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897880192566209715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e768249f0da7288449ba6eec74d8b28e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PhaseInteratorRef: {fileID: 11400000, guid: d2c2094db3f9f4a49bf29435f2220849, type: 2}
+  _GameTimerRef: {fileID: 11400000, guid: b7a01ff9eef4d7844a7680beb1d73134, type: 2}
+  _Sprites:
+  - {fileID: -9053078709900273536, guid: bcbb98e2d5bb68240bf23647a8b4ba84, type: 3}
+  - {fileID: -2304745105975620534, guid: 6671e2332428f984587b8e16b29f43c4, type: 3}
 --- !u!1 &1897880192615748030
 GameObject:
   m_ObjectHideFlags: 0
@@ -896,6 +950,7 @@ GameObject:
   - component: {fileID: 1897880192615748032}
   - component: {fileID: 1897880192615748033}
   - component: {fileID: 5967799216726187846}
+  - component: {fileID: 8921983784926583494}
   m_Layer: 0
   m_Name: New Sprite (1)
   m_TagString: Untagged
@@ -980,6 +1035,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cca2dc92a05dcd49ad1e5e26094ddc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8921983784926583494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897880192615748030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e768249f0da7288449ba6eec74d8b28e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PhaseInteratorRef: {fileID: 11400000, guid: d2c2094db3f9f4a49bf29435f2220849, type: 2}
+  _GameTimerRef: {fileID: 11400000, guid: b7a01ff9eef4d7844a7680beb1d73134, type: 2}
+  _Sprites:
+  - {fileID: -9053078709900273536, guid: bcbb98e2d5bb68240bf23647a8b4ba84, type: 3}
+  - {fileID: -2304745105975620534, guid: 6671e2332428f984587b8e16b29f43c4, type: 3}
 --- !u!1 &1897880192748978332
 GameObject:
   m_ObjectHideFlags: 0
@@ -991,6 +1063,7 @@ GameObject:
   - component: {fileID: 1897880192748978334}
   - component: {fileID: 1897880192748978335}
   - component: {fileID: 8642881965711018501}
+  - component: {fileID: 3328627713980157741}
   m_Layer: 0
   m_Name: New Sprite (2)
   m_TagString: Untagged
@@ -1075,6 +1148,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cca2dc92a05dcd49ad1e5e26094ddc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3328627713980157741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897880192748978332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e768249f0da7288449ba6eec74d8b28e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PhaseInteratorRef: {fileID: 11400000, guid: d2c2094db3f9f4a49bf29435f2220849, type: 2}
+  _GameTimerRef: {fileID: 11400000, guid: b7a01ff9eef4d7844a7680beb1d73134, type: 2}
+  _Sprites:
+  - {fileID: -9053078709900273536, guid: bcbb98e2d5bb68240bf23647a8b4ba84, type: 3}
+  - {fileID: -2304745105975620534, guid: 6671e2332428f984587b8e16b29f43c4, type: 3}
 --- !u!1 &2071751977616425052
 GameObject:
   m_ObjectHideFlags: 0
@@ -3633,6 +3723,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ff2ad68e32700c44a97e9e239175794, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _GameTimerRef: {fileID: 11400000, guid: b7a01ff9eef4d7844a7680beb1d73134, type: 2}
+  PhaseInteratorRef: {fileID: 11400000, guid: d2c2094db3f9f4a49bf29435f2220849, type: 2}
 --- !u!114 &2536377165429799764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3645,6 +3737,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09293d374b471364d838ebad3c41c671, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _GameTimerRef: {fileID: 11400000, guid: b7a01ff9eef4d7844a7680beb1d73134, type: 2}
+  PhaseInteratorRef: {fileID: 11400000, guid: d2c2094db3f9f4a49bf29435f2220849, type: 2}
 --- !u!1 &7685191056254483820
 GameObject:
   m_ObjectHideFlags: 0
