@@ -50,8 +50,7 @@ public class CarTurn : MonoBehaviour
         _DashBoardRef.Ref.Value.transform.Rotate(_TurnDirection * _RotationAmount);
         _RoadChunksRef.Ref.Value.transform.Rotate((-_TurnDirection * _RotationAmount));
 
-        if (_TurnDirection == 1f || _DashBoardRef.Ref.Value.transform.rotation.y > 0f) return;
-        ChangeTurnDirection();
+        if (_TurnDirection == 1f || (_DashBoardRef.Ref.Value.transform.rotation.y > 0f && _RoadChunksRef.Ref.Value.transform.rotation.y > 0f)) return;
 
         ResetCarRotation();
     }
@@ -68,5 +67,6 @@ public class CarTurn : MonoBehaviour
         _DashBoardRef.Ref.Value.transform.localRotation = new Quaternion(0f,0f,0f,0f);
         _RoadChunksRef.Ref.Value.transform.rotation = new Quaternion(0f,0f,0f,0f);
         _RoadChunksRef.Ref.Value.transform.localRotation = new Quaternion(0f,0f,0f,0f);
+        ChangeTurnDirection();
     }
 }

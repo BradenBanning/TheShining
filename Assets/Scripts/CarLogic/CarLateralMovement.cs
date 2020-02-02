@@ -50,7 +50,7 @@ public class CarLateralMovement : MonoBehaviour
         var zPos = _RoadChunksRef.Ref.Value.transform.position.z;
         _RoadChunksRef.Ref.Value.transform.position = new Vector3(-_CurrentPosition, yPos, zPos);
         
-        if(_MoveAmount.x > 0f || _CurrentPosition < 0) return;
+        if(_MoveAmount.x > 0f || -_CurrentPosition < 0) return;
         
         ResetCarPosition();
         
@@ -59,6 +59,7 @@ public class CarLateralMovement : MonoBehaviour
     public void ResetCarPosition()
     {
         _TimerRef.TryStartTimer();
-        _RoadChunksRef.Ref.Value.transform.position = new Vector3(0f, 0f, 0f);
+        _RoadChunksRef.Ref.Value.transform.localPosition = new Vector3(0f, 0f, 0f);
+        ChangeMovementDirection();
     }
 }
