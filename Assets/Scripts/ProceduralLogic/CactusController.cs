@@ -25,7 +25,7 @@ public class CactusController : MonoBehaviour
     {
         _GameTimerRef.IsTimerRunning += PhaseHasChanged;
 
-        if (PhaseIsNight() == false)
+        if (PhaseIsNight() == true)
         {
             if (Random.Range(0, 4) <= 0)
             {
