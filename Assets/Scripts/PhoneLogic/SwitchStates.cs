@@ -18,12 +18,12 @@ public class SwitchStates : MonoBehaviour
 
     private void OnEnable()
     {
-        _SwitchStateInputRef.Ref.Value.SwitchStatesEvent += SwitchPlayState;
+        _SwitchStateInputRef.Instance.Value.SwitchStatesEvent += SwitchPlayState;
     }
 
     private void OnDisable()
     {
-        _SwitchStateInputRef.Ref.Value.SwitchStatesEvent -= SwitchPlayState;
+        _SwitchStateInputRef.Instance.Value.SwitchStatesEvent -= SwitchPlayState;
     }
 
     private void Update()

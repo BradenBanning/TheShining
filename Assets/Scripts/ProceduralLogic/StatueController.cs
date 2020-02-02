@@ -26,7 +26,7 @@ public class StatueController : MonoBehaviour
 
         if (PhaseIsNight() == true)
         {
-            if (Random.Range(0, 49) <= 0)
+            if (Random.Range(0, (49*2)) <= 0)
             {
                 var position = Random.Range(0, _StatueArray.Length);
 

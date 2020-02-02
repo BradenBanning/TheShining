@@ -12,24 +12,31 @@ public class CarLateralMovement : MonoBehaviour
 
     [SerializeField] private SOStearingInputs _StearingInputsRef;
     [SerializeField] private SOTimer _TimerRef;
+    [SerializeField] private SOSwitchState _SwitchStateRef;
 
     [SerializeField] private Vector3 _MoveAmount;
-
-    private bool _IsTimerRunning = true;
 
     private float _CurrentPosition;
 
     private void OnEnable()
     {
-        _TimerRef.IsTimerRunning += ChangeTimerStatus;
         _StearingInputsRef.Instance.Value.StearingEvent += ChangeMovementDirection;
+        _SwitchStateRef.Instance.Value.SwitchStatesEvent += StatesSwitched;
+    }
+
+    private void StatesSwitched()
+    {
+        if (_SwitchStateRef.Instance.Value.IsInDriveState % 2 == 0)
+        {
+            
+        }
     }
 
 
     private void OnDisable()
     {
-        _TimerRef.IsTimerRunning -= ChangeTimerStatus;
         _StearingInputsRef.Instance.Value.StearingEvent -= ChangeMovementDirection;
+        _SwitchStateRef.Instance.Value.SwitchStatesEvent -= StatesSwitched;
     }
 
     private void ChangeMovementDirection(int direction)
@@ -40,15 +47,9 @@ public class CarLateralMovement : MonoBehaviour
         }
     }
 
-    private void ChangeTimerStatus(bool status)
-    {
-        _IsTimerRunning = status;
-    }
 
     private void Update()
     {
-        // if (_IsTimerRunning == true) return;
-
         _CurrentPosition += _MoveAmount.x;
         var yPos = _RoadChunksRef.Ref.Value.transform.position.y;
         var zPos = _RoadChunksRef.Ref.Value.transform.position.z;
@@ -62,6 +63,5 @@ public class CarLateralMovement : MonoBehaviour
     public void ResetCarPosition()
     {
         _TimerRef.TryStartTimer();
-        // ChangeMovementDirection();
     }
 }
