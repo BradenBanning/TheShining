@@ -4081,7 +4081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9de19595173991429738bf56a629f06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _StearingInputsRef: {fileID: 0}
+  _StearingInputsRef: {fileID: 11400000, guid: f14bb9046caf15143881e9fb0f1ceb85, type: 2}
 --- !u!114 &1976127850
 MonoBehaviour:
   m_ObjectHideFlags: 0
