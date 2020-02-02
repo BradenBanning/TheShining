@@ -24,7 +24,7 @@ public class CatusController : MonoBehaviour
 
         for (int i = 0; i < count; i++)
         {
-            Debug.Log(range % _CactusArray.Length);
+            // Debug.Log(range % _CactusArray.Length);
             _CactusArray[range % _CactusArray.Length].gameObject.SetActive(true);
             range += _CactusArray.Length / 2;
         }
