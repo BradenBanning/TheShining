@@ -649,7 +649,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2eebdfcb41a0058479104f10bc02cfe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _MoveSpeed: 1.5
+  _MoveSpeed: 4
   _MoveSpeedMultiplier: 0.05
 --- !u!114 &-2813333674714736372
 MonoBehaviour:
@@ -676,9 +676,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa4d91a48ca66f34685ec984ae58b4bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _PoolableSO: {fileID: 11400000, guid: d1c6e9998d29f8142a5b1cad810e7f5d, type: 2}
   _EndPoint: -49.3
-  _StartPoint: 493
 --- !u!114 &-490938629182338399
 MonoBehaviour:
   m_ObjectHideFlags: 0

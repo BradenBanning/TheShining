@@ -240,8 +240,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _PoolableSO: {fileID: 11400000, guid: d1c6e9998d29f8142a5b1cad810e7f5d, type: 2}
-  _RoadPlacementLimit: 25
-  _RoadPlacementIteration: 20
+  _RoadPlacementLimit: 13
+  _RoadPlacementIteration: 57
 --- !u!114 &276500016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -255,8 +255,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _PoolableSO: {fileID: 11400000, guid: d1c6e9998d29f8142a5b1cad810e7f5d, type: 2}
-  _StartPoint: 570
-  _TimerLimit: 1.5
+  _StartPoint: 700
+  _TimerLimit: 0.57
 --- !u!1 &289298268
 GameObject:
   m_ObjectHideFlags: 0
@@ -381,7 +381,7 @@ MonoBehaviour:
   _DashBoardRef: {fileID: 11400000, guid: 123c95c39a76c964c98a0df598f77f0d, type: 2}
   _RoadChunksRef: {fileID: 11400000, guid: f32df6d990439874ea824c29e7126e8a, type: 2}
   _TimerRef: {fileID: 11400000, guid: 373a758170f3c3e4f811545fc9605c71, type: 2}
-  _RotationAmount: {x: 0, y: 0.01, z: 0}
+  _RotationAmount: {x: 0, y: 0.1, z: 0}
   _TurnMaximum: 1.8
 --- !u!4 &315792228
 Transform:
@@ -412,7 +412,7 @@ MonoBehaviour:
   _RoadChunksRef: {fileID: 11400000, guid: f32df6d990439874ea824c29e7126e8a, type: 2}
   _StearingInputsRef: {fileID: 11400000, guid: f14bb9046caf15143881e9fb0f1ceb85, type: 2}
   _TimerRef: {fileID: 11400000, guid: 373a758170f3c3e4f811545fc9605c71, type: 2}
-  _MoveAmount: {x: 0.001, y: 0, z: 0}
+  _MoveAmount: {x: 0.01, y: 0, z: 0}
 --- !u!114 &315792230
 MonoBehaviour:
   m_ObjectHideFlags: 0
