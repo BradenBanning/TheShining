@@ -13,7 +13,6 @@ public class SOTimer : SOFloat
     
     private float _TimerLimit;
     private int _ScriptsReadyForTimerChange;
-    private int _Count;
 
     public void SetTimeLimit(float val)
     {
@@ -33,8 +32,6 @@ public class SOTimer : SOFloat
 
     public void TryStartTimer()
     {
-        _Count++;
-        Debug.Log(_Count);
         if (AllScriptsAreReady() == true) return;
         ResetTimer();
         IsTimerRunning.Invoke(true);
