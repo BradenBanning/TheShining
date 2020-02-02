@@ -6,19 +6,22 @@ using UnityEngine;
 
 public class RoadIntitializer : MonoBehaviour
 {
-    [SerializeField] private PoolableObject _PrefabRef;
-    [SerializeField] private int _RoadPlacementLimit = 10;
+    
+    
+    [SerializeField] private SOPoolableObject _PoolableSO;
+    [SerializeField] private int _RoadPlacementLimit = 20;
     [SerializeField] private float _RoadPlacementIteration = 57f;
+    
+    private PoolableObject _PrefabRef;
     private float _CurrentRoadPosition;
 
     private void Awake()
     {
-        PoolManager.CreatePool(_PrefabRef, 12);
+        _PrefabRef = _PoolableSO.PrefabRef;
+        PoolManager.CreatePool(_PrefabRef, 40);
         for (int i = 0; i < _RoadPlacementLimit + 1; i++)
         {
-            var currentRoad = PoolManager.GetNext(_PrefabRef);
-            currentRoad.transform.position = new Vector3(0f, 0f, _CurrentRoadPosition);
-            currentRoad.gameObject.SetActive(true);
+            var currentRoad = PoolManager.GetNext(_PrefabRef,new Vector3(0f, 0f, _CurrentRoadPosition),Quaternion.identity,true);
             _CurrentRoadPosition += _RoadPlacementIteration;
         }
     }

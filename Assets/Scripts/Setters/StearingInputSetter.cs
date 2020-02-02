@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class StearingInputSetter : MonoBehaviour
 {
-
     [SerializeField] private SOStearingInputs _StrearingInputSO;
     private StearingInputs _StearingInput;
 

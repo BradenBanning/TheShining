@@ -11,9 +11,7 @@ public class RoadLerp : MonoBehaviour
 
     private void Update()
     {
-        var yPos = transform.position.y;
-        var xPos = transform.position.x;
-        var newPos = transform.position.z - _MoveSpeed * _MoveSpeedMultiplier;
-        transform.position = new Vector3(xPos,yPos, newPos);
+        var newPos = transform.position.z - (_MoveSpeed * _MoveSpeedMultiplier);
+        transform.localPosition = new Vector3(0f,0f, newPos);
     }
 }
