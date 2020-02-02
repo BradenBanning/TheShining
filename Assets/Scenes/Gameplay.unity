@@ -1583,6 +1583,7 @@ GameObject:
   - component: {fileID: 1976127849}
   - component: {fileID: 1976127851}
   - component: {fileID: 1976127850}
+  - component: {fileID: 1976127852}
   m_Layer: 0
   m_Name: InputLogic
   m_TagString: Untagged
@@ -1654,6 +1655,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _SwitchStateSO: {fileID: 11400000, guid: c25586a47e7fe04489816bd828716726, type: 2}
+--- !u!114 &1976127852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976127846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 587b43719353e0b478cdf88babf53321, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _TextBoxRef: {fileID: 11400000, guid: 10ddbefdde42413469f0bd7daa9609cd, type: 2}
 --- !u!1 &1984963672
 GameObject:
   m_ObjectHideFlags: 0
