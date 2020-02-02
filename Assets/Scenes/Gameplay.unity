@@ -576,6 +576,7 @@ GameObject:
   m_Component:
   - component: {fileID: 829772698}
   - component: {fileID: 829772697}
+  - component: {fileID: 829772696}
   m_Layer: 0
   m_Name: RenderText Camera
   m_TagString: Untagged
@@ -583,6 +584,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &829772696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829772695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbcb2e9fca7d23e41b4cae0d3defaced, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _SwitchStateInputRef: {fileID: 11400000, guid: c25586a47e7fe04489816bd828716726,
+    type: 2}
+  _MoveSpeed: 0.05
+  _UpperDestination: 500
+  _LowerDestination: 1
 --- !u!20 &829772697
 Camera:
   m_ObjectHideFlags: 0
@@ -1466,6 +1484,7 @@ GameObject:
   - component: {fileID: 1976127848}
   - component: {fileID: 1976127847}
   - component: {fileID: 1976127849}
+  - component: {fileID: 1976127851}
   - component: {fileID: 1976127850}
   m_Layer: 0
   m_Name: InputLogic
@@ -1525,6 +1544,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc145cb4b3da7b74885c43b91abd8323, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1976127851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976127846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1104cbbe916d5c541a0bbd3c2d61224d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _SwitchStateSO: {fileID: 11400000, guid: c25586a47e7fe04489816bd828716726, type: 2}
 --- !u!1 &1984963672
 GameObject:
   m_ObjectHideFlags: 0
