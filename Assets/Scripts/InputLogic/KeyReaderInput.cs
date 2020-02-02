@@ -34,6 +34,24 @@ public class KeyReaderInput : MonoBehaviour
                     _TextBoxRef.TestInput(inputChar);
                     
                 }
+                else if ( vKey.ToString() == KeyCode.Exclaim.ToString())
+                {
+                    char inputChar = '!';
+                    _TextBoxRef.TestInput(inputChar);
+                    
+                }
+                else if ( vKey.ToString() == KeyCode.DoubleQuote.ToString())
+                {
+                    char inputChar = '"';
+                    _TextBoxRef.TestInput(inputChar);
+                    
+                }
+                else if ( vKey.ToString() == KeyCode.Minus.ToString() || vKey.ToString() == KeyCode.KeypadMinus.ToString())
+                {
+                    char inputChar = '-';
+                    _TextBoxRef.TestInput(inputChar);
+                    
+                }
                 else
                 {
                     char inputChar = vKey.ToString().ToCharArray()[0];
