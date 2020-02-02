@@ -18,6 +18,16 @@ public class NightSpriteController : MonoBehaviour
     private void OnEnable()
     {
         _GameTimerRef.IsTimerRunning += PhaseHasChanged;
+        
+        if (PhaseIsNight() == true)
+        {
+            _SpriteRenderer.sprite = _Sprites[1];
+        }
+        else
+        {
+            _SpriteRenderer.sprite = _Sprites[0];
+        }
+        
     }
 
     private void OnDisable()
