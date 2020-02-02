@@ -14,9 +14,12 @@ public class CarLateralMovement : MonoBehaviour
     [SerializeField] private SOTimer _TimerRef;
     [SerializeField] private SOSwitchState _SwitchStateRef;
 
+
+    [SerializeField] private float _SpeedStateReducer = 0.25f;
     [SerializeField] private Vector3 _MoveAmount;
 
     private float _CurrentPosition;
+    private float _SpeedMultiplier = 1f;
 
     private void OnEnable()
     {
@@ -28,7 +31,11 @@ public class CarLateralMovement : MonoBehaviour
     {
         if (_SwitchStateRef.Instance.Value.IsInDriveState % 2 == 0)
         {
-            
+            _SpeedMultiplier = _SpeedStateReducer;
+        }
+        else
+        {
+            _SpeedMultiplier = 1;
         }
     }
 
@@ -50,7 +57,7 @@ public class CarLateralMovement : MonoBehaviour
 
     private void Update()
     {
-        _CurrentPosition += _MoveAmount.x;
+        _CurrentPosition += (_MoveAmount.x *_SpeedMultiplier);
         var yPos = _RoadChunksRef.Ref.Value.transform.position.y;
         var zPos = _RoadChunksRef.Ref.Value.transform.position.z;
         _RoadChunksRef.Ref.Value.transform.position = new Vector3(-_CurrentPosition, yPos, zPos);
