@@ -20,7 +20,7 @@ public class CatusController : MonoBehaviour
     {
         var range = Random.Range(0, _CactusArray.Length);
         
-        var count =  Mathf.Clamp(range / 3, 0, 2);
+        var count =  Mathf.Clamp(range - 10, 0, 2);
 
         for (int i = 0; i < count; i++)
         {
