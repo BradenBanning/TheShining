@@ -331,7 +331,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _PoolableSO: {fileID: 11400000, guid: d1c6e9998d29f8142a5b1cad810e7f5d, type: 2}
   _StartPoint: 700
-  _TimerLimit: 0.57
+  _TimerLimit: 1.5
 --- !u!1 &289298268
 GameObject:
   m_ObjectHideFlags: 0
