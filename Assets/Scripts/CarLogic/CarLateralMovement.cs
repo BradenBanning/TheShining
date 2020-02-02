@@ -21,19 +21,19 @@ public class CarLateralMovement : MonoBehaviour
     private void OnEnable()
     {
         _TimerRef.IsTimerRunning += ChangeTimerStatus;
-        _StearingInputsRef.Ref.Value.StearingEvent += ChangeMovementDirection;
+        _StearingInputsRef.Instance.Value.StearingEvent += ChangeMovementDirection;
     }
     
     
     private void OnDisable()
     {
         _TimerRef.IsTimerRunning -= ChangeTimerStatus;
-        _StearingInputsRef.Ref.Value.StearingEvent -= ChangeMovementDirection;
+        _StearingInputsRef.Instance.Value.StearingEvent -= ChangeMovementDirection;
     }
 
-    private void ChangeMovementDirection()
+    private void ChangeMovementDirection(int direction)
     {
-        _MoveAmount.x *= -1f;
+        _MoveAmount.x *= -1f * direction;
     }
 
     private void ChangeTimerStatus(bool status)
@@ -59,7 +59,6 @@ public class CarLateralMovement : MonoBehaviour
     public void ResetCarPosition()
     {
         _TimerRef.TryStartTimer();
-        _RoadChunksRef.Ref.Value.transform.localPosition = new Vector3(0f, 0f, 0f);
-        ChangeMovementDirection();
+        // ChangeMovementDirection();
     }
 }

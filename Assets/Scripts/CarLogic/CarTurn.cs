@@ -20,14 +20,14 @@ public class CarTurn : MonoBehaviour
 
     private void OnEnable()
     {
-        _StearingInputsRef.Ref.Value.StearingEvent += ChangeTurnDirection;
+        _StearingInputsRef.Instance.Value.StearingEvent += ChangeTurnDirection;
         _TimerRef.IsTimerRunning += ChangeTimerStatus;
     }
 
 
     private void OnDisable()
     {
-        _StearingInputsRef.Ref.Value.StearingEvent -= ChangeTurnDirection;
+        _StearingInputsRef.Instance.Value.StearingEvent -= ChangeTurnDirection;
     }
 
 
@@ -55,18 +55,15 @@ public class CarTurn : MonoBehaviour
         ResetCarRotation();
     }
 
-    private void ChangeTurnDirection()
+    private void ChangeTurnDirection(int direction)
     {
-        _TurnDirection *= -1;
+        _TurnDirection *= -1 * -1;
     }
 
 
     private void ResetCarRotation()
     {
         _TimerRef.TryStartTimer();
-        _DashBoardRef.Ref.Value.transform.localRotation = new Quaternion(0f,0f,0f,0f);
-        _RoadChunksRef.Ref.Value.transform.rotation = new Quaternion(0f,0f,0f,0f);
-        _RoadChunksRef.Ref.Value.transform.localRotation = new Quaternion(0f,0f,0f,0f);
-        ChangeTurnDirection();
+        // ChangeTurnDirection();
     }
 }
