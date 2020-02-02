@@ -57,7 +57,7 @@ public class CarTurn : MonoBehaviour
 
     private void ChangeTurnDirection(int direction)
     {
-        _TurnDirection *= -1 * -1;
+        _TurnDirection *= -1;
     }
 
 
