@@ -708,7 +708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e768249f0da7288449ba6eec74d8b28e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PhaseInteratorRef: {fileID: 11400000, guid: d2c2094db3f9f4a49bf29435f2220849, type: 2}
+  _PhaseInteratorRef: {fileID: 11400000, guid: d2c2094db3f9f4a49bf29435f2220849, type: 2}
   _GameTimerRef: {fileID: 11400000, guid: b7a01ff9eef4d7844a7680beb1d73134, type: 2}
   _Sprites:
   - {fileID: -9053078709900273536, guid: bcbb98e2d5bb68240bf23647a8b4ba84, type: 3}
@@ -821,7 +821,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e768249f0da7288449ba6eec74d8b28e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PhaseInteratorRef: {fileID: 11400000, guid: d2c2094db3f9f4a49bf29435f2220849, type: 2}
+  _PhaseInteratorRef: {fileID: 11400000, guid: d2c2094db3f9f4a49bf29435f2220849, type: 2}
   _GameTimerRef: {fileID: 11400000, guid: b7a01ff9eef4d7844a7680beb1d73134, type: 2}
   _Sprites:
   - {fileID: -9053078709900273536, guid: bcbb98e2d5bb68240bf23647a8b4ba84, type: 3}
@@ -934,7 +934,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e768249f0da7288449ba6eec74d8b28e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PhaseInteratorRef: {fileID: 11400000, guid: d2c2094db3f9f4a49bf29435f2220849, type: 2}
+  _PhaseInteratorRef: {fileID: 11400000, guid: d2c2094db3f9f4a49bf29435f2220849, type: 2}
   _GameTimerRef: {fileID: 11400000, guid: b7a01ff9eef4d7844a7680beb1d73134, type: 2}
   _Sprites:
   - {fileID: -9053078709900273536, guid: bcbb98e2d5bb68240bf23647a8b4ba84, type: 3}
@@ -1047,7 +1047,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e768249f0da7288449ba6eec74d8b28e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PhaseInteratorRef: {fileID: 11400000, guid: d2c2094db3f9f4a49bf29435f2220849, type: 2}
+  _PhaseInteratorRef: {fileID: 11400000, guid: d2c2094db3f9f4a49bf29435f2220849, type: 2}
   _GameTimerRef: {fileID: 11400000, guid: b7a01ff9eef4d7844a7680beb1d73134, type: 2}
   _Sprites:
   - {fileID: -9053078709900273536, guid: bcbb98e2d5bb68240bf23647a8b4ba84, type: 3}
@@ -1160,7 +1160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e768249f0da7288449ba6eec74d8b28e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PhaseInteratorRef: {fileID: 11400000, guid: d2c2094db3f9f4a49bf29435f2220849, type: 2}
+  _PhaseInteratorRef: {fileID: 11400000, guid: d2c2094db3f9f4a49bf29435f2220849, type: 2}
   _GameTimerRef: {fileID: 11400000, guid: b7a01ff9eef4d7844a7680beb1d73134, type: 2}
   _Sprites:
   - {fileID: -9053078709900273536, guid: bcbb98e2d5bb68240bf23647a8b4ba84, type: 3}

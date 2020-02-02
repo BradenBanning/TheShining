@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class NightSpriteController : MonoBehaviour
 {
-    [SerializeField] private SOFloat PhaseInteratorRef;
+    [SerializeField] private SOFloat _PhaseInteratorRef;
     [SerializeField] private SOTimer _GameTimerRef;
     [SerializeField] private Sprite[] _Sprites;
     private SpriteRenderer _SpriteRenderer;
@@ -19,7 +19,7 @@ public class NightSpriteController : MonoBehaviour
     {
         _GameTimerRef.IsTimerRunning += PhaseHasChanged;
         
-        if (PhaseIsNight() == true)
+        if (PhaseIsNight() == true  && _PhaseInteratorRef.Value > 1f)
         {
             _SpriteRenderer.sprite = _Sprites[1];
         }
@@ -51,6 +51,6 @@ public class NightSpriteController : MonoBehaviour
 
     private bool PhaseIsNight()
     {
-        return Mathf.RoundToInt(PhaseInteratorRef.Value) % 2 != 0;
+        return Mathf.RoundToInt(_PhaseInteratorRef.Value) % 2 != 0;
     }
 }

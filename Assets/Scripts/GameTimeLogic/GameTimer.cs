@@ -22,9 +22,9 @@ public class GameTimer : MonoBehaviour
 
     private void Awake()
     {
+        _PhaseIteratorRef.SetValue(1f);
         _GameTimerRef.SetTimeLimit(_GamePhaseTimeLimit);
         _GameTimerRef.TryStartTimer();
-        _PhaseIteratorRef.SetValue(1f);
     }
 
     private void Update()
