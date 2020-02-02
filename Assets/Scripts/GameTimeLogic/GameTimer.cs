@@ -9,6 +9,8 @@ public class GameTimer : MonoBehaviour
 
     [SerializeField] private SOGameWinEvent _GameWinEventRef;
 
+    [SerializeField] private SOFloat _PhaseIteratorRef;
+
     [SerializeField] private float _GamePhaseTimeLimit = 480f;
 
     [SerializeField] private int _NumberOfPhasesPerGame = 60;
@@ -19,6 +21,7 @@ public class GameTimer : MonoBehaviour
     {
         _GameTimerRef.SetTimeLimit(_GamePhaseTimeLimit);
         _GameTimerRef.TryStartTimer();
+        _PhaseIteratorRef.SetValue(1f);
     }
 
     private void OnEnable()
@@ -35,6 +38,7 @@ public class GameTimer : MonoBehaviour
     {
         _GameTimerRef.TryStartTimer();
         CurrentPhase++;
+        _PhaseIteratorRef.ModifyValue(1f);
 
         if (CurrentPhase > _NumberOfPhasesPerGame)
         {

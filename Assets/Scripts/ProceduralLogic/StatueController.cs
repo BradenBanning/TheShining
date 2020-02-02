@@ -5,6 +5,10 @@ using Random = UnityEngine.Random;
 
 public class StatueController : MonoBehaviour
 {
+    [SerializeField] private SOTimer _GameTimerRef;
+
+    private int PhaseInterator = 1;
+
     private IsStatue[] _StatueArray;
 
     private void Awake()
@@ -18,12 +22,23 @@ public class StatueController : MonoBehaviour
 
     private void OnEnable()
     {
-        if (Random.Range(0, 49) <= 0)
-        {
-            var position = Random.Range(0, _StatueArray.Length);
+        _GameTimerRef.IsTimerRunning += PhaseHasChanged;
 
-            _StatueArray[position].gameObject.SetActive(true);
+        if (PhaseInterator % 2 != 0)
+        {
+            if (Random.Range(0, 49) <= 0)
+            {
+                var position = Random.Range(0, _StatueArray.Length);
+
+                _StatueArray[position].gameObject.SetActive(true);
+            }
         }
+    }
+
+    private void PhaseHasChanged(bool obj)
+    {
+        PhaseInterator++;
+        DisableAllStatues();
     }
 
     private void OnDisable()
