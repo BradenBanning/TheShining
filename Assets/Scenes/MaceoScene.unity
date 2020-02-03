@@ -829,7 +829,7 @@ MonoBehaviour:
   _DashBoardRef: {fileID: 11400000, guid: 123c95c39a76c964c98a0df598f77f0d, type: 2}
   _RoadChunksRef: {fileID: 11400000, guid: f32df6d990439874ea824c29e7126e8a, type: 2}
   _TimerRef: {fileID: 11400000, guid: 373a758170f3c3e4f811545fc9605c71, type: 2}
-  _RotationAmount: {x: 0, y: 0.1, z: 0}
+  _RotationAmount: {x: 0, y: 0, z: 0}
   _TurnMaximum: 1.8
 --- !u!4 &315792228
 Transform:
@@ -863,7 +863,7 @@ MonoBehaviour:
   _SwitchStateRef: {fileID: 11400000, guid: c25586a47e7fe04489816bd828716726, type: 2}
   _Pivot: {fileID: 1850283188}
   _SpeedStateReducer: 0.25
-  _MoveAmount: {x: 0.01, y: 0, z: 0}
+  _MoveAmount: {x: 0, y: 0, z: 0}
 --- !u!114 &315792230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4242,7 +4242,7 @@ MonoBehaviour:
   _GameTimerRef: {fileID: 11400000, guid: b7a01ff9eef4d7844a7680beb1d73134, type: 2}
   _GameWinEventRef: {fileID: 11400000, guid: d1f5988e297564242b03538b96faffdc, type: 2}
   _PhaseIteratorRef: {fileID: 11400000, guid: d2c2094db3f9f4a49bf29435f2220849, type: 2}
-  _GamePhaseTimeLimit: 480
+  _GamePhaseTimeLimit: 300
   _NumberOfPhasesPerGame: 60000
 --- !u!4 &1761867326
 Transform:
