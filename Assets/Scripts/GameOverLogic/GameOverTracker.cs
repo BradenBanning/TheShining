@@ -17,7 +17,6 @@ public class GameOverTracker : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(_IsInGameOverArea);
         if (_RoadChunksRef.Instance.Value.transform.position.x < -_GameOverPos ||
             _RoadChunksRef.Instance.Value.transform.position.x > _GameOverPos)
         {

@@ -127,6 +127,7 @@ GameObject:
   - component: {fileID: 2402172721935702077}
   - component: {fileID: 4878421582698775656}
   - component: {fileID: 954860210541503592}
+  - component: {fileID: 5832368737944231823}
   m_Layer: 0
   m_Name: Cactus_64x64_5
   m_TagString: Untagged
@@ -219,6 +220,26 @@ MonoBehaviour:
   - {fileID: -1778916315915664325, guid: afb41a08cd35df047bb3799077ba0e09, type: 3}
   - {fileID: -783034929655820378, guid: afb41a08cd35df047bb3799077ba0e09, type: 3}
   - {fileID: 3937321668181067375, guid: afb41a08cd35df047bb3799077ba0e09, type: 3}
+--- !u!114 &5832368737944231823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664802359222583188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec05bb09db3ca794abdf97ed44a7d3ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PhaseInteratorRef: {fileID: 11400000, guid: d2c2094db3f9f4a49bf29435f2220849, type: 2}
+  _GameTimerRef: {fileID: 11400000, guid: b7a01ff9eef4d7844a7680beb1d73134, type: 2}
+  _GameOverEventRef: {fileID: 11400000, guid: f8c57c9771d70264086c6b45954d8cb4, type: 2}
+  _Colors:
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 0.16037738, g: 0.16037738, b: 0.16037738, a: 1}
+  _HasGameOverColor: 0
+  _GameOverColorPos: 2
 --- !u!1 &673713199418669951
 GameObject:
   m_ObjectHideFlags: 0
@@ -1570,6 +1591,7 @@ GameObject:
   - component: {fileID: 1147521186320688924}
   - component: {fileID: 1630675712283613136}
   - component: {fileID: 5117141547375766299}
+  - component: {fileID: 3431837369537407416}
   m_Layer: 0
   m_Name: Cactus_64x64_5
   m_TagString: Untagged
@@ -1662,6 +1684,26 @@ MonoBehaviour:
   - {fileID: -1778916315915664325, guid: afb41a08cd35df047bb3799077ba0e09, type: 3}
   - {fileID: -783034929655820378, guid: afb41a08cd35df047bb3799077ba0e09, type: 3}
   - {fileID: 3937321668181067375, guid: afb41a08cd35df047bb3799077ba0e09, type: 3}
+--- !u!114 &3431837369537407416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2727840999572372404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec05bb09db3ca794abdf97ed44a7d3ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PhaseInteratorRef: {fileID: 11400000, guid: d2c2094db3f9f4a49bf29435f2220849, type: 2}
+  _GameTimerRef: {fileID: 11400000, guid: b7a01ff9eef4d7844a7680beb1d73134, type: 2}
+  _GameOverEventRef: {fileID: 11400000, guid: f8c57c9771d70264086c6b45954d8cb4, type: 2}
+  _Colors:
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 0.16037738, g: 0.16037738, b: 0.16037738, a: 1}
+  _HasGameOverColor: 0
+  _GameOverColorPos: 2
 --- !u!1 &3373647351666973321
 GameObject:
   m_ObjectHideFlags: 0
@@ -1777,6 +1819,7 @@ GameObject:
   - component: {fileID: 7564954592364456089}
   - component: {fileID: 4859642518501758849}
   - component: {fileID: 732509095884871640}
+  - component: {fileID: 1068792723076782298}
   m_Layer: 0
   m_Name: Cactus_64x64_5
   m_TagString: Untagged
@@ -1869,6 +1912,26 @@ MonoBehaviour:
   - {fileID: -1778916315915664325, guid: afb41a08cd35df047bb3799077ba0e09, type: 3}
   - {fileID: -783034929655820378, guid: afb41a08cd35df047bb3799077ba0e09, type: 3}
   - {fileID: 3937321668181067375, guid: afb41a08cd35df047bb3799077ba0e09, type: 3}
+--- !u!114 &1068792723076782298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3873301248962966427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec05bb09db3ca794abdf97ed44a7d3ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PhaseInteratorRef: {fileID: 11400000, guid: d2c2094db3f9f4a49bf29435f2220849, type: 2}
+  _GameTimerRef: {fileID: 11400000, guid: b7a01ff9eef4d7844a7680beb1d73134, type: 2}
+  _GameOverEventRef: {fileID: 11400000, guid: f8c57c9771d70264086c6b45954d8cb4, type: 2}
+  _Colors:
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 0.16037738, g: 0.16037738, b: 0.16037738, a: 1}
+  _HasGameOverColor: 0
+  _GameOverColorPos: 2
 --- !u!1 &3875176999111658389
 GameObject:
   m_ObjectHideFlags: 0
@@ -3854,6 +3917,7 @@ GameObject:
   - component: {fileID: 855387520720806584}
   - component: {fileID: 9035118964312628934}
   - component: {fileID: 1084847855244319835}
+  - component: {fileID: 7706765808318770085}
   m_Layer: 0
   m_Name: Cactus_64x64_5
   m_TagString: Untagged
@@ -3946,6 +4010,26 @@ MonoBehaviour:
   - {fileID: -1778916315915664325, guid: afb41a08cd35df047bb3799077ba0e09, type: 3}
   - {fileID: -783034929655820378, guid: afb41a08cd35df047bb3799077ba0e09, type: 3}
   - {fileID: 3937321668181067375, guid: afb41a08cd35df047bb3799077ba0e09, type: 3}
+--- !u!114 &7706765808318770085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7737875224318600074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec05bb09db3ca794abdf97ed44a7d3ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PhaseInteratorRef: {fileID: 11400000, guid: d2c2094db3f9f4a49bf29435f2220849, type: 2}
+  _GameTimerRef: {fileID: 11400000, guid: b7a01ff9eef4d7844a7680beb1d73134, type: 2}
+  _GameOverEventRef: {fileID: 11400000, guid: f8c57c9771d70264086c6b45954d8cb4, type: 2}
+  _Colors:
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 0.16037738, g: 0.16037738, b: 0.16037738, a: 1}
+  _HasGameOverColor: 0
+  _GameOverColorPos: 2
 --- !u!1 &7884098479419589367
 GameObject:
   m_ObjectHideFlags: 0
