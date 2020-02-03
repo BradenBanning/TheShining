@@ -10,6 +10,8 @@ public class SwitchStates : MonoBehaviour
     [SerializeField] private float _MoveSpeed = 0.05f;
     [SerializeField] private float _UpperDestination = 500f;
     [SerializeField] private float _LowerDestination = 1f;
+    [SerializeField] private ButtonInput _ButtonInput;
+    [SerializeField] private WheelInput _WheelInput;
     [SerializeField] private float _TimerLimit = 0.01f;
     private bool _InPhoneState = false;
     private int _MoveDirection = -1;
@@ -46,12 +48,16 @@ public class SwitchStates : MonoBehaviour
 
         if (_MoveDirection == 1 && transform.localPosition.y >= _UpperDestination)
         {
+            _WheelInput.gameObject.SetActive(true);
+            _ButtonInput.gameObject.SetActive(true);
             newPos = _UpperDestination;
             transform.localPosition = new Vector3(xPos, newPos, zPos);
             _IsMoving = false;
         }
         else if (_MoveDirection == -1 && transform.localPosition.y <= _LowerDestination)
         {
+            _WheelInput.gameObject.SetActive(false);
+            _ButtonInput.gameObject.SetActive(false);
             newPos = _LowerDestination;
             transform.localPosition = new Vector3(xPos, newPos, zPos);
             _IsMoving = false;
