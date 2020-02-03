@@ -13,6 +13,7 @@ public class CarLateralMovement : MonoBehaviour
     [SerializeField] private SOStearingInputs _StearingInputsRef;
     [SerializeField] private SOTimer _TimerRef;
     [SerializeField] private SOSwitchState _SwitchStateRef;
+    [SerializeField] private Transform _Pivot;
 
 
     [SerializeField] private float _SpeedStateReducer = 0.25f;
@@ -25,10 +26,14 @@ public class CarLateralMovement : MonoBehaviour
     {
         _StearingInputsRef.Instance.Value.StearingEvent += ChangeMovementDirection;
         _SwitchStateRef.Instance.Value.SwitchStatesEvent += StatesSwitched;
+        _Pivot.rotation = Quaternion.Euler(0f, 0f, -10);
     }
 
     private void StatesSwitched()
     {
+
+
+
         if (_SwitchStateRef.Instance.Value.IsInDriveState % 2 == 0)
         {
             _SpeedMultiplier = _SpeedStateReducer;
@@ -52,12 +57,21 @@ public class CarLateralMovement : MonoBehaviour
         {
             _MoveAmount.x *= -1f;
         }
+        
+        if (_Pivot.rotation.z < 0)
+        {
+            _Pivot.rotation = Quaternion.Euler(0f, 0f, 10);
+        }
+        else
+        {
+            _Pivot.rotation = Quaternion.Euler(0f, 0f, -10);
+        }
     }
 
 
     private void Update()
     {
-        _CurrentPosition += (_MoveAmount.x *_SpeedMultiplier);
+        _CurrentPosition += (_MoveAmount.x * _SpeedMultiplier);
         var yPos = _RoadChunksRef.Instance.Value.transform.position.y;
         var zPos = _RoadChunksRef.Instance.Value.transform.position.z;
         _RoadChunksRef.Instance.Value.transform.position = new Vector3(-_CurrentPosition, yPos, zPos);
