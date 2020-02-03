@@ -3357,6 +3357,7 @@ GameObject:
   - component: {fileID: 1819898416}
   - component: {fileID: 1819898419}
   - component: {fileID: 1819898420}
+  - component: {fileID: 1819898421}
   m_Layer: 0
   m_Name: SkyPlane
   m_TagString: Untagged
@@ -3499,6 +3500,22 @@ MonoBehaviour:
   - {r: 0.8396226, g: 0, b: 0, a: 1}
   _HasGameOverColor: 1
   _GameOverColorPos: 2
+--- !u!114 &1819898421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819898415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dde0ddc026f63140be1875c467fa26e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _GameOverEventRef: {fileID: 11400000, guid: f8c57c9771d70264086c6b45954d8cb4, type: 2}
+  _MoveSpeed: 5
+  _MoveSpeedMultiplier: 1
+  _TimerLimit: 0.02
 --- !u!1 &1844243029
 GameObject:
   m_ObjectHideFlags: 0
