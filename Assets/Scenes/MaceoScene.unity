@@ -1039,6 +1039,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: adc15e49635e84b4687cf0bfd5971430, type: 3}
   - {fileID: 8300000, guid: 118d9b85a5452624687e2fb245a34cb6, type: 3}
   - {fileID: 8300000, guid: 9648323105cdba747bb8694ba0109704, type: 3}
+  - {fileID: 8300000, guid: a746e8649f896fb4f862c6f18e06ee63, type: 3}
   - {fileID: 8300000, guid: 6a8765cc520d5924490675e27ef04f71, type: 3}
   _TrackChangeAudio: {fileID: 8300000, guid: 8c50065b85b48f54b883c1f3c68d7855, type: 3}
 --- !u!1 &496072628
