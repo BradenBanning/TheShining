@@ -93,9 +93,37 @@ public class KeyReaderInput : MonoBehaviour
                     char inputChar = '0';
                     _TextBoxRef.TestInput(inputChar);
                 }
+
+                else if (vKey.ToString() == KeyCode.Minus.ToString() ||
+                         vKey.ToString() == KeyCode.KeypadMinus.ToString())
+                {
+                    char inputChar = '-';
+                    _TextBoxRef.TestInput(inputChar);
+                }
                 else if (vKey.ToString() == KeyCode.Semicolon.ToString())
                 {
                     char inputChar = ';';
+                    _TextBoxRef.TestInput(inputChar);
+                }
+                else if (vKey.ToString() == KeyCode.Colon.ToString())
+                {
+                    char inputChar = ':';
+                    _TextBoxRef.TestInput(inputChar);
+                }
+                else if (vKey.ToString() == KeyCode.Question.ToString())
+                {
+                    char inputChar = '?';
+                    _TextBoxRef.TestInput(inputChar);
+                }
+                
+                else if (vKey.ToString() == KeyCode.LeftBracket.ToString())
+                {
+                    char inputChar = '(';
+                    _TextBoxRef.TestInput(inputChar);
+                }
+                else if (vKey.ToString() == KeyCode.RightBracket.ToString())
+                {
+                    char inputChar = ')';
                     _TextBoxRef.TestInput(inputChar);
                 }
                 else

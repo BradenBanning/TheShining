@@ -38,5 +38,13 @@ public class GameOverMoveObject : MonoBehaviour
             var newPos = transform.position.z - (_MoveSpeed * _MoveSpeedMultiplier);
             transform.localPosition = new Vector3(xPos, yPos, newPos);
         }
+
+        StartCoroutine(EndGame());
+    }
+
+    private IEnumerator EndGame()
+    {
+        yield return new WaitForSecondsRealtime(3f);
+        Application.Quit();
     }
 }
