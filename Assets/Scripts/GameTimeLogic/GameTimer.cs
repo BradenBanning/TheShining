@@ -31,16 +31,6 @@ public class GameTimer : MonoBehaviour
     {
         if(_TimerRunning == false) return;
 
-        if (Input.GetKeyDown(KeyCode.Alpha0))
-        {
-            _GameTimerRef.SetTimeLimit(50000f);
-        }
-        
-        if (Input.GetKeyDown(KeyCode.Alpha9))
-        {
-            _GameTimerRef.SetTimeLimit(5f);
-        }
-        
         
         _GameTimerRef.ModifyValue(Time.deltaTime);
         if (_GameTimerRef.CheckIfTimerLimitReached())

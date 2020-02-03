@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR;
 
 public class ButtonInput : MonoBehaviour
 {
@@ -17,6 +18,11 @@ public class ButtonInput : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+        
         var ray = _Cam.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(ray, out var hit) == false) return;
         if (hit.transform.GetComponent<SphereCollider>() != _ButtonCollider || Input.GetMouseButtonDown(0) == false) return;

@@ -4242,7 +4242,7 @@ MonoBehaviour:
   _GameWinEventRef: {fileID: 11400000, guid: d1f5988e297564242b03538b96faffdc, type: 2}
   _PhaseIteratorRef: {fileID: 11400000, guid: d2c2094db3f9f4a49bf29435f2220849, type: 2}
   _GamePhaseTimeLimit: 480
-  _NumberOfPhasesPerGame: 60
+  _NumberOfPhasesPerGame: 60000
 --- !u!4 &1761867326
 Transform:
   m_ObjectHideFlags: 0

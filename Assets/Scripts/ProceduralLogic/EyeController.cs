@@ -11,9 +11,9 @@ public class EyeController : MonoBehaviour
     private IsEye[] _EyeArray;
 
     [SerializeField] private float _DefaultSpawnTime = 1.5f;
-    
+
     [SerializeField] private float _StartSpawnTime = 60;
-     private float _TimeBetweenEyeSpawn;
+    private float _TimeBetweenEyeSpawn;
 
     private void Awake()
     {
@@ -36,14 +36,18 @@ public class EyeController : MonoBehaviour
         _GameTimerRef.IsTimerRunning -= PhaseHasChanged;
         DisableAllEyes();
     }
-    
+
     private IEnumerator EyeEnabler()
     {
         foreach (var eye in _EyeArray)
         {
             _TimeBetweenEyeSpawn += _DefaultSpawnTime;
             yield return new WaitForSeconds(_TimeBetweenEyeSpawn);
-            
+            if (_TimeBetweenEyeSpawn >= 60f)
+            {
+                _TimeBetweenEyeSpawn = _DefaultSpawnTime;
+            }
+
             eye.gameObject.SetActive(true);
         }
     }
@@ -63,12 +67,12 @@ public class EyeController : MonoBehaviour
 
     private void PhaseHasChanged(bool val)
     {
-        if(val == true) return;
+        if (val == true) return;
         if (PhaseIsNight() == false)
         {
             DisableAllEyes();
         }
-        else if(PhaseIsNight() == true)
+        else if (PhaseIsNight() == true)
         {
             _TimeBetweenEyeSpawn = _StartSpawnTime;
             StartCoroutine(EyeEnabler());
