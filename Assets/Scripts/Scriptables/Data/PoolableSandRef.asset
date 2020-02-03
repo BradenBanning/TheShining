@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 753006e9f8e2a9d4399f316d6f8da7d5, type: 3}
-  m_Name: PoolableObjectRef
+  m_Name: PoolableSandRef
   m_EditorClassIdentifier: 
-  PrefabRef: {fileID: -2813333674714736372, guid: 4802782d110ebb347b58acbac502ef1a,
+  PrefabRef: {fileID: -6659173392162024507, guid: ef8b09b5f086de849b78871c90f24f31,
     type: 3}

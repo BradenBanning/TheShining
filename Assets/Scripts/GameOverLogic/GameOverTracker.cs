@@ -18,7 +18,6 @@ public class GameOverTracker : MonoBehaviour
             _RoadChunksRef.Instance.Value.transform.position.x > _GameOverPos)
         {
             _GameOverEventRef.GameOverHappened.Invoke();
-            Debug.Log("Boom Crash Bang");
         }
         else if (_RoadChunksRef.Instance.Value.transform.position.x < -_WarningPos ||
                  _RoadChunksRef.Instance.Value.transform.position.x > _WarningPos)
