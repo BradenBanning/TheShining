@@ -3,12 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using ObjectPooling;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RadioController : MonoBehaviour
 {
     [SerializeField] private AudioSource _AudioSource;
     [SerializeField] private AudioClip[] _Songs;
     [SerializeField] private AudioClip _TrackChangeAudio;
+    [SerializeField] private Image _ButtonImage;
+    [SerializeField] private Sprite[] _ButtonArray;
 
     private int TrackPos = -1;
 
@@ -23,11 +26,13 @@ public class RadioController : MonoBehaviour
     private void OnEnable()
     {
         StartCoroutine(WaitForClipToEnd(0.5f));
+        _ButtonImage.sprite = _ButtonArray[0];
     }
 
     private void OnDisable()
     {
         StopAllCoroutines();
+        _ButtonImage.sprite = _ButtonArray[1];
     }
 
     private IEnumerator WaitForClipToEnd(float trackLength)
