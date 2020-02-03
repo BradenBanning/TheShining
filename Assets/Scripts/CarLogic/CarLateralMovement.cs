@@ -56,16 +56,16 @@ public class CarLateralMovement : MonoBehaviour
         if ((_MoveAmount.x < 0 && direction < 0) || (_MoveAmount.x > 0 && direction > 0))
         {
             _MoveAmount.x *= -1f;
+            if (_Pivot.rotation.z < 0)
+            {
+                _Pivot.rotation = Quaternion.Euler(0f, 0f, 10);
+            }
+            else
+            {
+                _Pivot.rotation = Quaternion.Euler(0f, 0f, -10);
+            }
         }
         
-        if (_Pivot.rotation.z < 0)
-        {
-            _Pivot.rotation = Quaternion.Euler(0f, 0f, 10);
-        }
-        else
-        {
-            _Pivot.rotation = Quaternion.Euler(0f, 0f, -10);
-        }
     }
 
 
