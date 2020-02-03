@@ -58,9 +58,9 @@ public class CarLateralMovement : MonoBehaviour
     private void Update()
     {
         _CurrentPosition += (_MoveAmount.x *_SpeedMultiplier);
-        var yPos = _RoadChunksRef.Ref.Value.transform.position.y;
-        var zPos = _RoadChunksRef.Ref.Value.transform.position.z;
-        _RoadChunksRef.Ref.Value.transform.position = new Vector3(-_CurrentPosition, yPos, zPos);
+        var yPos = _RoadChunksRef.Instance.Value.transform.position.y;
+        var zPos = _RoadChunksRef.Instance.Value.transform.position.z;
+        _RoadChunksRef.Instance.Value.transform.position = new Vector3(-_CurrentPosition, yPos, zPos);
 
         if (_MoveAmount.x > 0f || -_CurrentPosition < 0) return;
 

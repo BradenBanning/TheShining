@@ -9,6 +9,6 @@ public class RoadHierarchySettings : MonoBehaviour
 
     private void Awake()
     {
-        gameObject.transform.SetParent(_RoadChunksRef.Ref.Value.transform);
+        gameObject.transform.SetParent(_RoadChunksRef.Instance.Value.transform);
     }
 }

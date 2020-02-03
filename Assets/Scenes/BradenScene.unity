@@ -956,6 +956,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 496072628}
   m_CullTransparentMesh: 0
+--- !u!1 &742712815
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 742712816}
+  - component: {fileID: 742712817}
+  m_Layer: 0
+  m_Name: GameOverLogic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &742712816
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742712815}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -395.76898, y: -410.01746, z: 1241.7633}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &742712817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742712815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caf44101598c3f94b9d7ea92121285e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _RoadChunksRef: {fileID: 11400000, guid: f32df6d990439874ea824c29e7126e8a, type: 2}
+  _GameOverEventRef: {fileID: 11400000, guid: f8c57c9771d70264086c6b45954d8cb4, type: 2}
+  _WarningPos: 9
+  _GameOverPos: 15
 --- !u!1 &811545849
 GameObject:
   m_ObjectHideFlags: 0
@@ -2669,9 +2716,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PhaseInteratorRef: {fileID: 11400000, guid: d2c2094db3f9f4a49bf29435f2220849, type: 2}
   _GameTimerRef: {fileID: 11400000, guid: b7a01ff9eef4d7844a7680beb1d73134, type: 2}
+  _GameOverEventRef: {fileID: 11400000, guid: f8c57c9771d70264086c6b45954d8cb4, type: 2}
   _Colors:
   - {r: 1, g: 1, b: 1, a: 1}
   - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0.6132076, g: 0, b: 0, a: 1}
+  _HasGameOverColor: 0
+  _GameOverColorPos: 0
 --- !u!1 &1615147737
 GameObject:
   m_ObjectHideFlags: 0
@@ -3306,6 +3357,7 @@ GameObject:
   - component: {fileID: 1819898416}
   - component: {fileID: 1819898419}
   - component: {fileID: 1819898420}
+  - component: {fileID: 1819898421}
   m_Layer: 0
   m_Name: SkyPlane
   m_TagString: Untagged
@@ -3441,9 +3493,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PhaseInteratorRef: {fileID: 11400000, guid: d2c2094db3f9f4a49bf29435f2220849, type: 2}
   _GameTimerRef: {fileID: 11400000, guid: b7a01ff9eef4d7844a7680beb1d73134, type: 2}
+  _GameOverEventRef: {fileID: 11400000, guid: f8c57c9771d70264086c6b45954d8cb4, type: 2}
   _Colors:
   - {r: 1, g: 1, b: 1, a: 1}
   - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0.8396226, g: 0, b: 0, a: 1}
+  _HasGameOverColor: 1
+  _GameOverColorPos: 2
+--- !u!114 &1819898421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819898415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dde0ddc026f63140be1875c467fa26e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _GameOverEventRef: {fileID: 11400000, guid: f8c57c9771d70264086c6b45954d8cb4, type: 2}
+  _MoveSpeed: 5
+  _MoveSpeedMultiplier: 1
+  _TimerLimit: 0.02
 --- !u!1 &1844243029
 GameObject:
   m_ObjectHideFlags: 0
