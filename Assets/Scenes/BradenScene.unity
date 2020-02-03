@@ -446,7 +446,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _PoolableSO: {fileID: 11400000, guid: d1c6e9998d29f8142a5b1cad810e7f5d, type: 2}
   _StartPoint: 700
-  _TimerLimit: 1.5
+  _TimerLimit: 0.5
   _XRotation: 0
 --- !u!1 &289298268
 GameObject:
@@ -3465,6 +3465,7 @@ MonoBehaviour:
   _GameTimerRef: {fileID: 11400000, guid: b7a01ff9eef4d7844a7680beb1d73134, type: 2}
   PhaseInteratorRef: {fileID: 11400000, guid: d2c2094db3f9f4a49bf29435f2220849, type: 2}
   _DefaultSpawnTime: 1.5
+  _StartSpawnTime: 60
 --- !u!114 &1819898420
 MonoBehaviour:
   m_ObjectHideFlags: 0
