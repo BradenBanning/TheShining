@@ -38,6 +38,10 @@ public class RadioController : MonoBehaviour
         if (_AudioSource.clip == _TrackChangeAudio)
         {
             TrackPos++;
+            if (TrackPos > _Songs.Length)
+            {
+                TrackPos = 0;
+            }
             _AudioSource.clip = _Songs[TrackPos];
         }
         else
