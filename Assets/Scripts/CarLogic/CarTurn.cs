@@ -48,9 +48,9 @@ public class CarTurn : MonoBehaviour
             _DashBoardRef.Ref.Value.transform.rotation.y * Mathf.Rad2Deg >= _TurnMaximum) return;
 
         _DashBoardRef.Ref.Value.transform.Rotate(_TurnDirection * _RotationAmount);
-        _RoadChunksRef.Ref.Value.transform.Rotate((-_TurnDirection * _RotationAmount));
+        _RoadChunksRef.Instance.Value.transform.Rotate((-_TurnDirection * _RotationAmount));
 
-        if (_TurnDirection == 1f || (_DashBoardRef.Ref.Value.transform.rotation.y > 0f && _RoadChunksRef.Ref.Value.transform.rotation.y > 0f)) return;
+        if (_TurnDirection == 1f || (_DashBoardRef.Ref.Value.transform.rotation.y > 0f && _RoadChunksRef.Instance.Value.transform.rotation.y > 0f)) return;
 
         ResetCarRotation();
     }
