@@ -14,12 +14,10 @@ public class StearingInputs : MonoBehaviour
         if (_StearingInputsRef.Instance._PositiveXMovement >= _StearingInputsRef.Instance._NegativeXMovement)
         {
             StearingEvent.Invoke(1);
-            Debug.Log("Pos");
         }
         else
         {
             StearingEvent.Invoke(-1);
-            Debug.Log("!Pos");
         }
     }
 }

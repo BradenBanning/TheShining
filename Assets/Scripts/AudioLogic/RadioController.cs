@@ -22,7 +22,7 @@ public class RadioController : MonoBehaviour
 
     private void OnEnable()
     {
-        StartCoroutine(WaitForClipToEnd(_TrackChangeAudio.length));
+        StartCoroutine(WaitForClipToEnd(0.5f));
     }
 
     private void OnDisable()
