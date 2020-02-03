@@ -6,6 +6,8 @@ using UnityEngine;
 public class KeyReaderInput : MonoBehaviour
 {
     [SerializeField] private SOTextBoxBehaviour _TextBoxRef;
+    private string _SingleQuote = "'";
+  
 
     private void Awake()
     {
@@ -124,6 +126,16 @@ public class KeyReaderInput : MonoBehaviour
                 else if (vKey.ToString() == KeyCode.RightBracket.ToString())
                 {
                     char inputChar = ')';
+                    _TextBoxRef.TestInput(inputChar);
+                }
+                else if (vKey.ToString() == KeyCode.Quote.ToString())
+                {
+                    char inputChar = _SingleQuote[0];
+                    _TextBoxRef.TestInput(inputChar);
+                }
+                else if (vKey.ToString() == KeyCode.BackQuote.ToString())
+                {
+                    char inputChar = '`';
                     _TextBoxRef.TestInput(inputChar);
                 }
                 else
