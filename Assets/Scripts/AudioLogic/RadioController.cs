@@ -10,6 +10,7 @@ public class RadioController : MonoBehaviour
     [SerializeField] private AudioSource _AudioSource;
     [SerializeField] private AudioClip[] _Songs;
     [SerializeField] private AudioClip _TrackChangeAudio;
+    [SerializeField] private AudioClip _DummyTrack;
     [SerializeField] private Image _ButtonImage;
     [SerializeField] private Sprite[] _ButtonArray;
 
@@ -18,9 +19,10 @@ public class RadioController : MonoBehaviour
 
     private void Awake()
     {
-        _AudioSource.clip = _TrackChangeAudio;
-        _AudioSource.Play();
-        StartCoroutine(WaitForClipToEnd(_TrackChangeAudio.length));
+        _AudioSource.clip = _DummyTrack;
+        
+        // _AudioSource.Play();
+        // StartCoroutine(WaitForClipToEnd(_TrackChangeAudio.length));
     }
 
     private void OnEnable()

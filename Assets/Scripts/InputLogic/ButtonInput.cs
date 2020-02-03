@@ -9,7 +9,7 @@ public class ButtonInput : MonoBehaviour
     [SerializeField] private AudioSource _AudioSource;
     [SerializeField] private RadioController _RadioController;
     private SphereCollider _ButtonCollider;
-    private bool _IsPlaying = true;
+    private bool _IsPlaying = false;
 
     private void Awake()
     {

@@ -908,7 +908,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &377763285
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1045,6 +1045,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a746e8649f896fb4f862c6f18e06ee63, type: 3}
   - {fileID: 8300000, guid: 6a8765cc520d5924490675e27ef04f71, type: 3}
   _TrackChangeAudio: {fileID: 8300000, guid: 8c50065b85b48f54b883c1f3c68d7855, type: 3}
+  _DummyTrack: {fileID: 8300000, guid: 3a68536e0061a084dba7a96a36fc802c, type: 3}
   _ButtonImage: {fileID: 2073308608}
   _ButtonArray:
   - {fileID: -5589051854447512371, guid: 7b03a21a8fb633c4f99faf3870b27916, type: 3}
@@ -5382,7 +5383,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -5589051854447512371, guid: 7b03a21a8fb633c4f99faf3870b27916,
+  m_Sprite: {fileID: 8946946598749289516, guid: 7b03a21a8fb633c4f99faf3870b27916,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
