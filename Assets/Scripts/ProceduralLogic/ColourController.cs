@@ -8,8 +8,7 @@ public class ColourController : MonoBehaviour
     [SerializeField] private SOTimer _GameTimerRef;
     [SerializeField] private SOGameOverEvent _GameOverEventRef;
     [SerializeField] private Color[] _Colors;
-    [Header("Game Over")]
-    [SerializeField] private bool _HasGameOverColor = true;
+    [Header("Game Over")] [SerializeField] private bool _HasGameOverColor = true;
     [SerializeField] private int _GameOverColorPos = 2;
     private SpriteRenderer _SpriteRenderer;
 
@@ -22,6 +21,21 @@ public class ColourController : MonoBehaviour
     {
         _GameTimerRef.IsTimerRunning += PhaseHasChanged;
         _GameOverEventRef.GameOverHappened += GameOverHappened;
+
+        if (Mathf.RoundToInt(PhaseInteratorRef.Value) == 1)
+        {
+            _SpriteRenderer.color = _Colors[0];
+        }
+        
+        else if (PhaseIsNight() == true)
+        {
+            _SpriteRenderer.color = _Colors[1];
+        }
+        else
+        {
+            _SpriteRenderer.color = _Colors[0];
+        }
+
     }
 
     private void GameOverHappened()

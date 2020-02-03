@@ -431,6 +431,7 @@ MonoBehaviour:
   _PoolableSO: {fileID: 11400000, guid: d1c6e9998d29f8142a5b1cad810e7f5d, type: 2}
   _RoadPlacementLimit: 13
   _RoadPlacementIteration: 57
+  _XRotation: 0
 --- !u!114 &276500016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -446,6 +447,7 @@ MonoBehaviour:
   _PoolableSO: {fileID: 11400000, guid: d1c6e9998d29f8142a5b1cad810e7f5d, type: 2}
   _StartPoint: 700
   _TimerLimit: 1.5
+  _XRotation: 0
 --- !u!1 &289298268
 GameObject:
   m_ObjectHideFlags: 0
@@ -1034,8 +1036,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _PoolableSO: {fileID: 11400000, guid: 21b80017d83b0e84dad52ea8352c448b, type: 2}
-  _StartPoint: 1280
-  _TimerLimit: 60
+  _StartPoint: 3840
+  _TimerLimit: 22.5
+  _XRotation: 90
 --- !u!4 &746569585
 Transform:
   m_ObjectHideFlags: 0
@@ -1065,6 +1068,7 @@ MonoBehaviour:
   _PoolableSO: {fileID: 11400000, guid: 21b80017d83b0e84dad52ea8352c448b, type: 2}
   _RoadPlacementLimit: 3
   _RoadPlacementIteration: 1280
+  _XRotation: 90
 --- !u!1 &811545849
 GameObject:
   m_ObjectHideFlags: 0
