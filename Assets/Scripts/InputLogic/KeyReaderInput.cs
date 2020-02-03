@@ -105,6 +105,27 @@ public class KeyReaderInput : MonoBehaviour
                     char inputChar = ';';
                     _TextBoxRef.TestInput(inputChar);
                 }
+                else if (vKey.ToString() == KeyCode.Colon.ToString())
+                {
+                    char inputChar = ':';
+                    _TextBoxRef.TestInput(inputChar);
+                }
+                else if (vKey.ToString() == KeyCode.Question.ToString())
+                {
+                    char inputChar = '?';
+                    _TextBoxRef.TestInput(inputChar);
+                }
+                
+                else if (vKey.ToString() == KeyCode.LeftBracket.ToString())
+                {
+                    char inputChar = '(';
+                    _TextBoxRef.TestInput(inputChar);
+                }
+                else if (vKey.ToString() == KeyCode.RightBracket.ToString())
+                {
+                    char inputChar = ')';
+                    _TextBoxRef.TestInput(inputChar);
+                }
                 else
                 {
                     char inputChar = vKey.ToString().ToCharArray()[0];
