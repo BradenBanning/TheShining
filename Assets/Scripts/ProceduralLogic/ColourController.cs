@@ -22,14 +22,20 @@ public class ColourController : MonoBehaviour
         _GameTimerRef.IsTimerRunning += PhaseHasChanged;
         _GameOverEventRef.GameOverHappened += GameOverHappened;
 
-        if (PhaseIsNight() == true)
+        if (Mathf.RoundToInt(PhaseInteratorRef.Value) == 1)
         {
             _SpriteRenderer.color = _Colors[0];
         }
-        else
+        
+        else if (PhaseIsNight() == true)
         {
             _SpriteRenderer.color = _Colors[1];
         }
+        else
+        {
+            _SpriteRenderer.color = _Colors[0];
+        }
+
     }
 
     private void GameOverHappened()
