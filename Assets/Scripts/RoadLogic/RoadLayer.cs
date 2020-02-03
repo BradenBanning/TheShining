@@ -29,6 +29,6 @@ public class RoadLayer : MonoBehaviour
         var nextRoad = PoolManager.GetNext(_PrefabRef, new Vector3(0f, 0f, _StartPoint),
             Quaternion.Euler(_XRotation, 0f, 0f), true);
         nextRoad.transform.localPosition = new Vector3(0f, 0f, _StartPoint);
-        nextRoad.transform.localRotation = Quaternion.identity;
+        nextRoad.transform.localRotation = Quaternion.Euler(_XRotation, 0f, 0f);
     }
 }
