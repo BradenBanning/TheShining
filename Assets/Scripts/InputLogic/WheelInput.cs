@@ -53,6 +53,7 @@ public class WheelInput : MonoBehaviour
 
     private void KeyHitSetter(int val)
     {
+        if (_KeyInputRecieved == true) return;
         _KeyInputRecieved = true;
         _MouseValue *= -1;
         if (val < 1)
@@ -72,11 +73,11 @@ public class WheelInput : MonoBehaviour
              _MouseHit == false) && _KeyInputRecieved == false) return;
 
 
-        if (_LeftKeyHit == true || _MouseValue == -1)
+        if (_LeftKeyHit == true ||(_MouseHit == true &&  _MouseValue == -1))
         {
             _StearingInputsRef.Instance.IncreasePositiveMovement();
         }
-        else if (_RightKeyHit == true || _MouseValue == 1)
+        else if (_RightKeyHit == true || (_MouseHit == true && _MouseValue == 1))
         {
             _StearingInputsRef.Instance.IncreaseNegativeMovement();
         }
