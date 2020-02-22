@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6392327418998686545}
   - component: {fileID: -1746638331119786251}
   - component: {fileID: -6659173392162024507}
+  - component: {fileID: -3965186165502152873}
   m_Layer: 0
   m_Name: Sand
   m_TagString: Untagged
@@ -120,9 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2eebdfcb41a0058479104f10bc02cfe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _MoveSpeed: 7.5
-  _MoveSpeedMultiplier: 0.05
-  _TimerLimit: 0.02
+  _Velocity: {x: 0, y: 0, z: -30}
 --- !u!114 &6392327418998686545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,3 +161,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Lifespan: -1
+--- !u!54 &-3965186165502152873
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510685260906432401}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 4
+  m_CollisionDetection: 0
