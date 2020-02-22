@@ -48,16 +48,16 @@ public class SwitchStates : MonoBehaviour
 
         if (_MoveDirection == 1 && transform.localPosition.y >= _UpperDestination)
         {
-            _WheelInput.gameObject.SetActive(true);
-            _ButtonInput.gameObject.SetActive(true);
+            //_WheelInput.gameObject.SetActive(true);
+            //_ButtonInput.gameObject.SetActive(true);
             newPos = _UpperDestination;
             transform.localPosition = new Vector3(xPos, newPos, zPos);
             _IsMoving = false;
         }
         else if (_MoveDirection == -1 && transform.localPosition.y <= _LowerDestination)
         {
-            _WheelInput.gameObject.SetActive(false);
-            _ButtonInput.gameObject.SetActive(false);
+            //_WheelInput.gameObject.SetActive(false);
+            //_ButtonInput.gameObject.SetActive(false);
             newPos = _LowerDestination;
             transform.localPosition = new Vector3(xPos, newPos, zPos);
             _IsMoving = false;
